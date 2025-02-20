@@ -5,22 +5,22 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="terpeneminer",
+    name="enzymeexplorer",
     version="0.1.0",
     author="Raman Samusevich",
     author_email="raman.samusevich@gmail.com",
     description="A package for highly accurate detection of terpene synthases",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pluskal-lab/TerpeneMiner",
+    url="https://github.com/pluskal-lab/EnzymeExplorer",
     packages=find_packages(),
     entry_points={
         "console_scripts": [
-            "get_uniprot_sample=terpeneminer.src.data_preparation.get_uniprot_sample:main",
-            "get_phylogeny_based_clusters=terpeneminer.src.data_preparation.get_phylogeny_based_clusters:main",
-            "gather_plm_embeddings=terpeneminer.src.embeddings_extraction.gather_required_embs:main",
-            "plm_embeddings=terpeneminer.src.embeddings_extraction.transformer_embs:main",
-            "terpene_miner_main=terpeneminer.src.terpene_miner_main:main",
+            "get_uniprot_sample=enzymeexplorer.src.data_preparation.get_uniprot_sample:main",
+            "get_phylogeny_based_clusters=enzymeexplorer.src.data_preparation.get_phylogeny_based_clusters:main",
+            "gather_plm_embeddings=enzymeexplorer.src.embeddings_extraction.gather_required_embs:main",
+            "plm_embeddings=enzymeexplorer.src.embeddings_extraction.transformer_embs:main",
+            "enzyme_explorer_main=enzymeexplorer.src.enzyme_explorer_main:main",
         ],
     },
     classifiers=[

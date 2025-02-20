@@ -1,6 +1,6 @@
-INFO:/home/samusevich/TerpeneMiner/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Loading data...
-INFO:/home/samusevich/TerpeneMiner/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Data were loaded! There are 1203 loaded records in total.
-INFO:/home/samusevich/TerpeneMiner/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Generating MSA...
+INFO:/home/samusevich/EnzymeExplorer/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Loading data...
+INFO:/home/samusevich/EnzymeExplorer/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Data were loaded! There are 1203 loaded records in total.
+INFO:/home/samusevich/EnzymeExplorer/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Generating MSA...
 nthread = 64
 nthreadpair = 64
 nthreadtb = 16
@@ -1349,8 +1349,8 @@ The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
 It tends to insert more gaps into gap-rich regions than previous versions.
 To disable this change, add the --leavegappyregion option.
 
-INFO:/home/samusevich/TerpeneMiner/utils/data_prep_scripts/get_phylogeny_based_clusters.py:MSA is ready!
-INFO:/home/samusevich/TerpeneMiner/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Computing the phylogenetic tree...
+INFO:/home/samusevich/EnzymeExplorer/utils/data_prep_scripts/get_phylogeny_based_clusters.py:MSA is ready!
+INFO:/home/samusevich/EnzymeExplorer/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Computing the phylogenetic tree...
 IQ-TREE multicore version 2.3.0 COVID-edition for Linux 64-bit built Mar 14 2024
 Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
 Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
@@ -2901,7 +2901,7 @@ Ultrafast bootstrap approximation results written to:
   Screen log file:               data/_mafft_msa_tps_all.fasta.log
 
 Date and Time: Sun Apr 14 03:21:01 2024
-INFO:/home/samusevich/TerpeneMiner/utils/data_prep_scripts/get_phylogeny_based_clusters.py:The phylogenetic tree is ready!
-INFO:/home/samusevich/TerpeneMiner/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Performing several traversals of the phylogenetic tree to get clade-based groups...
-INFO:/home/samusevich/TerpeneMiner/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Clade-based groups are ready!
-INFO:/home/samusevich/TerpeneMiner/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Clade-based sequence grouped were stored to data/phylogenetic_cluster.pkl.
+INFO:/home/samusevich/EnzymeExplorer/utils/data_prep_scripts/get_phylogeny_based_clusters.py:The phylogenetic tree is ready!
+INFO:/home/samusevich/EnzymeExplorer/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Performing several traversals of the phylogenetic tree to get clade-based groups...
+INFO:/home/samusevich/EnzymeExplorer/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Clade-based groups are ready!
+INFO:/home/samusevich/EnzymeExplorer/utils/data_prep_scripts/get_phylogeny_based_clusters.py:Clade-based sequence grouped were stored to data/phylogenetic_cluster.pkl.

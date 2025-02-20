@@ -48,14 +48,14 @@ def main():
     if not Path(intermediate_outputs_root).exists():
         Path(intermediate_outputs_root).mkdir(parents=True)
     os.system(
-        "python -m terpeneminer.src.screening.tps_predict_fasta --model esm-1v-finetuned-subseq"
+        "python -m enzymeexplorer.src.screening.tps_predict_fasta --model esm-1v-finetuned-subseq"
         f" --fasta-path {args.input_fasta_path} --output-root {intermediate_outputs_root}"
         f" --detect-precursor-synthases {args.detect_precursor_synthases}"
         f" --detection-threshold {args.detection_threshold}"
         f" --ckpt-root-path {clf_chkpt_path}"
     )
     os.system(
-        f"python -m terpeneminer.src.screening.gather_detections_to_csv --screening-results-root {intermediate_outputs_root}/detections_plm --output-path {args.output_csv_path} --delete-individual-files"
+        f"python -m enzymeexplorer.src.screening.gather_detections_to_csv --screening-results-root {intermediate_outputs_root}/detections_plm --output-path {args.output_csv_path} --delete-individual-files"
     )
     rmtree(intermediate_outputs_root)
 

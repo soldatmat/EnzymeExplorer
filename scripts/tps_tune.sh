@@ -9,7 +9,7 @@
 #SBATCH --gres=gpu:1
 
 source ~/.bashrc
-conda activate terpene_miner
-cd /scratch/project_465000659/samusevi/TerpeneMiner
+conda activate enzyme_explorer
+cd /scratch/project_465000659/samusevi/EnzymeExplorer
 
-terpene_miner_main tune --hyperparameter-combination-i $SLURM_ARRAY_TASK_ID
+enzyme_explorer_main tune --hyperparameter-combination-i $SLURM_ARRAY_TASK_ID
